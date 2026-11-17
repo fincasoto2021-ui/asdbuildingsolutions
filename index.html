@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ASD Building Solutions LLC | Design-Build Engineering, Construction & Environmental</title>
-  <meta name="description" content="ASD Building Solutions LLC - Diseño y Construcción (Design-Build) de Sistemas Pluviales y Aguas Negras, Construcción General, Estudios de Plomo y Asbesto en Puerto Rico. Experiencia con ASSMCA, Salud, DRNA, ACAA, AAA y FEMA. Tel: 978.490.5394 | Reg. #510231." />
+  <meta name="description" content="ASD Building Solutions LLC - Diseño y Construcción (Design-Build) de Sistemas Pluviales y Aguas Negras, Construcción General, Estudios de Plomo y Asbesto en Puerto Rico. Experiencia con ASSMCA, Salud, DRNA, ACAA y FEMA. Tel: 978.490.5394 | Reg. #510231." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
@@ -24,660 +24,356 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-  <!-- Barra Ejecutiva Superior -->
-  <div class="navy-bg text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800">
-    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-3">
-      <div class="flex items-center gap-3">
-        <span class="font-semibold tracking-wide">
-          <span data-lang="es">Reg. Dept. Estado PR:</span>
-          <span data-lang="en">PR State Dept. Reg.:</span>
-          <strong class="gold-text">#510231</strong>
-        </span>
-        <span class="hidden sm:inline text-slate-600">|</span>
-        <span class="hidden sm:inline text-slate-400" data-lang="es">Design-Build • Ingeniería PE • Construcción • Ambiental</span>
-        <span class="hidden sm:inline text-slate-400" data-lang="en">Design-Build • PE Engineering • Construction • Environmental</span>
-      </div>
-      <div class="flex flex-wrap items-center gap-4">
-        <a href="tel:+19784905394" class="hover:text-white transition flex items-center gap-1.5 font-bold gold-text">
-          <span>📞</span> 978.490.5394
-        </a>
-        <a href="mailto:alberto@asdbuildingsolutions.com" class="hover:text-white transition hidden md:flex items-center gap-1.5 font-medium">
-          <span>✉️</span> alberto@asdbuildingsolutions.com
-        </a>
-        <!-- Botón de Cambio de Idioma Superior -->
-        <button onclick="toggleLanguage()" class="gold-bg text-slate-950 font-black px-3 py-1 rounded-md text-[11px] tracking-wider uppercase shadow hover:opacity-90 transition flex items-center gap-1.5 cursor-pointer">
-          <span>🌐</span>
-          <span data-lang="es">EN | English</span>
-          <span data-lang="en">ES | Español</span>
-        </button>
-      </div>
+  <!-- Barra Superior Compacta -->
+  <div class="navy-bg text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <span>
+        <span data-lang="es">Reg. Dept. Estado PR:</span>
+        <span data-lang="en">PR State Dept. Reg.:</span>
+        <strong class="gold-text">#510231</strong>
+      </span>
+      <a href="tel:+19784905394" class="font-bold gold-text hover:underline flex items-center gap-1">
+        <span>📞</span> 978.490.5394
+      </a>
     </div>
   </div>
 
-  <!-- Cabecera Principal con LOGO GRANDE (Sube normalmente al hacer scroll) -->
-  <header class="bg-white shadow-md border-b-2 gold-border">
-    <div class="max-w-6xl mx-auto px-4 py-5 flex flex-col lg:flex-row justify-between items-center gap-4">
+  <!-- Cabecera Principal (Sube normalmente al hacer scroll + Menú de 3 Rayitas) -->
+  <header class="bg-white shadow-sm border-b-2 gold-border relative z-30">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
       
-      <!-- Logo Corporativo ASD (Formato Grande) -->
-      <a href="#" class="flex items-center gap-4 group">
-        <svg class="w-20 h-20 md:w-24 md:h-24 shrink-0 drop-shadow-sm transition-transform group-hover:scale-105" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Logo Grande ASD -->
+      <a href="#" class="flex items-center gap-3.5">
+        <svg class="w-16 h-16 md:w-20 md:h-20 shrink-0" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <polygon points="45,8 77,26 77,63 45,81 13,63 13,26" stroke="#0B1D3A" stroke-width="5.5" fill="none"/>
           <polygon points="45,16 70,30 70,59 45,73 20,59 20,30" stroke="#0B1D3A" stroke-width="2.8" fill="none"/>
           <polygon points="75,8 107,26 107,63 75,81 43,63 43,26" stroke="#C5A880" stroke-width="5.5" fill="none"/>
           <polygon points="75,16 100,30 100,59 75,73 50,59 50,30" stroke="#C5A880" stroke-width="2.8" fill="none"/>
         </svg>
         <div>
-          <span class="text-4xl md:text-5xl font-black tracking-tighter navy-text block leading-none">ASD</span>
-          <span class="text-xs md:text-sm font-extrabold tracking-[0.22em] gold-text uppercase block mt-1.5">Building Solutions LLC</span>
-          <span class="text-[11px] font-medium text-slate-500 block mt-0.5" data-lang="es">Ingeniería Design-Build • Construcción • Ambiental</span>
-          <span class="text-[11px] font-medium text-slate-500 block mt-0.5" data-lang="en">Design-Build Engineering • Construction • Environmental</span>
+          <span class="text-3xl md:text-4xl font-black tracking-tighter navy-text block leading-none">ASD</span>
+          <span class="text-[11px] md:text-xs font-extrabold tracking-[0.2em] gold-text uppercase block mt-1">Building Solutions LLC</span>
+          <span class="text-[10px] font-medium text-slate-500 hidden sm:block mt-0.5" data-lang="es">Design-Build • Construcción • Ambiental</span>
+          <span class="text-[10px] font-medium text-slate-500 hidden sm:block mt-0.5" data-lang="en">Design-Build • Construction • Environmental</span>
         </div>
       </a>
 
-      <!-- Menú de Navegación + Selector de Idioma -->
-      <nav class="flex flex-wrap justify-center items-center gap-3 md:gap-5 text-sm font-bold text-slate-700">
-        <a href="#experiencia" class="hover:text-amber-700 transition">
-          <span data-lang="es">Experiencia</span>
-          <span data-lang="en">Track Record</span>
-        </a>
-        <a href="#hidrosanitaria" class="hover:text-amber-700 transition">
-          <span data-lang="es">Pluvial y Sanitario</span>
-          <span data-lang="en">Stormwater & Sewer</span>
-        </a>
-        <a href="#ambiental" class="hover:text-amber-700 transition">
-          <span data-lang="es">Plomo y Asbesto</span>
-          <span data-lang="en">Lead & Asbestos</span>
-        </a>
-        <a href="#personal" class="hover:text-amber-700 transition">
-          <span data-lang="es">Red Técnica</span>
-          <span data-lang="en">Contractor Network</span>
-        </a>
-        <button onclick="toggleLanguage()" class="border-2 gold-border navy-text px-3.5 py-2 rounded-lg font-extrabold text-xs hover:bg-amber-50 transition flex items-center gap-1.5 cursor-pointer">
+      <!-- Controles Derecha: UN SOLO Botón de Idioma + Botón Menú 3 Rayitas -->
+      <div class="flex items-center gap-2.5">
+        <button onclick="toggleLanguage()" class="border-2 gold-border navy-text px-3 py-2 rounded-lg font-extrabold text-xs hover:bg-amber-50 transition flex items-center gap-1 cursor-pointer">
           <span>🌐</span>
-          <span data-lang="es">English (EN)</span>
-          <span data-lang="en">Español (ES)</span>
+          <span data-lang="es">EN</span>
+          <span data-lang="en">ES</span>
         </button>
-        <a href="#contacto" class="navy-card text-white px-5 py-2.5 rounded-lg hover:opacity-95 transition shadow-md border border-amber-500/30">
-          <span data-lang="es">Solicitar Propuesta</span>
-          <span data-lang="en">Request a Quote</span>
+
+        <button onclick="openContactModal()" class="hidden sm:inline-flex gold-bg text-slate-950 font-extrabold px-4 py-2.5 rounded-lg text-xs uppercase tracking-wider shadow hover:opacity-90 transition cursor-pointer">
+          <span data-lang="es">Contacto Rápido</span>
+          <span data-lang="en">Quick Contact</span>
+        </button>
+
+        <!-- Botón de 3 Rayitas (Hamburger Menu) -->
+        <button onclick="toggleMobileMenu()" aria-label="Menu" class="navy-card text-white p-2.5 rounded-lg border border-slate-700 hover:opacity-95 transition cursor-pointer">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable de las 3 Rayitas -->
+    <div id="mobile-menu" class="hidden navy-bg text-white border-t border-slate-800 px-4 py-5 space-y-3 shadow-2xl">
+      <div class="max-w-6xl mx-auto flex flex-col space-y-3 text-sm font-bold">
+        <a href="#experiencia" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-800 hover:text-amber-300 transition flex justify-between items-center">
+          <span data-lang="es">1. Experiencia Gubernamental y Privada</span>
+          <span data-lang="en">1. Government & Private Track Record</span>
+          <span class="gold-text">→</span>
         </a>
-      </nav>
+        <a href="#divisiones" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-800 hover:text-amber-300 transition flex justify-between items-center">
+          <span data-lang="es">2. Divisiones (Pluvial, Aguas Negras, Plomo/Asbesto y Obras)</span>
+          <span data-lang="en">2. Core Divisions (Stormwater, Sewer, Lead/Asbestos & Civil)</span>
+          <span class="gold-text">→</span>
+        </a>
+        <a href="#red" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-800 hover:text-amber-300 transition flex justify-between items-center">
+          <span data-lang="es">3. Red de Contratistas (+40 Especialistas Disponibles)</span>
+          <span data-lang="en">3. Trade Contractor Network (40+ Specialists Available)</span>
+          <span class="gold-text">→</span>
+        </a>
+        <a href="#liderazgo" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-800 hover:text-amber-300 transition flex justify-between items-center">
+          <span data-lang="es">4. Liderazgo Ejecutivo</span>
+          <span data-lang="en">4. Executive Leadership</span>
+          <span class="gold-text">→</span>
+        </a>
+        <div class="pt-2 flex flex-col sm:flex-row gap-3">
+          <button onclick="toggleMobileMenu(); openContactModal();" class="w-full gold-bg text-slate-950 font-black py-3 px-5 rounded-lg text-center shadow cursor-pointer">
+            <span data-lang="es">📋 Abrir Página de Contacto Rápido</span>
+            <span data-lang="en">📋 Open Quick Contact Page</span>
+          </button>
+          <a href="tel:+19784905394" class="w-full bg-slate-800 border border-slate-700 text-white font-bold py-3 px-5 rounded-lg text-center">
+            📞 978.490.5394
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Principal de Alto Impacto -->
-  <section class="hero-gradient text-white py-16 md:py-24 px-4 relative overflow-hidden">
-    <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+  <!-- BLOQUE 1: Portada Limpia y Directa (Sin Tarjetas Repetidas) -->
+  <section class="hero-gradient text-white py-16 md:py-24 px-4">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border gold-border text-xs font-bold tracking-wider uppercase gold-text">
+        <span>🏛️</span>
+        <span data-lang="es">Design-Build • Ingeniería PE • Construcción General • Ambiental</span>
+        <span data-lang="en">Design-Build • PE Engineering • General Construction • Environmental</span>
+      </div>
       
-      <div class="lg:col-span-7 space-y-6">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border gold-border text-xs font-bold tracking-wider uppercase gold-text">
-          <span>🏛️</span>
-          <span data-lang="es">Firma Design-Build • Ingeniería PE & Construcción en Puerto Rico</span>
-          <span data-lang="en">Design-Build Firm • PE Engineering & Construction in Puerto Rico</span>
-        </div>
-        
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-tight" data-lang="es">
-          Diseño y Construcción de Sistemas Pluviales, Aguas Negras, Obras Civiles y Estudios Ambientales
-        </h1>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight tracking-tight" data-lang="en">
-          Design-Build Stormwater & Wastewater Systems, General Construction & Environmental Studies
-        </h1>
-        
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed" data-lang="es">
-          En <strong>ASD Building Solutions LLC</strong> integramos <strong>Ingeniería Profesional Licenciada (PE)</strong> con capacidad de ejecución en campo. Diseñamos, sellamos planos y construimos sistemas de manejo de aguas de lluvia (escorrentías), sistemas sanitarios de aguas negras, remodelaciones institucionales y estudios de plomo y asbesto, respaldados por una <strong>red aliada de más de 40 especialistas y subcontratistas disponibles</strong>.
-        </p>
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed" data-lang="en">
-          At <strong>ASD Building Solutions LLC</strong>, we integrate <strong>Licensed Professional Engineering (PE)</strong> with turnkey field execution. We design, stamp blueprints, and build stormwater management systems, sanitary wastewater infrastructure, institutional renovations, and lead/asbestos studies—backed by a <strong>vetted network of over 40 specialized trade contractors</strong>.
-        </p>
+      <h1 class="text-3xl sm:text-5xl font-black leading-tight tracking-tight" data-lang="es">
+        Diseño y Construcción de Sistemas Pluviales, Aguas Negras, Obras Civiles y Estudios Ambientales
+      </h1>
+      <h1 class="text-3xl sm:text-5xl font-black leading-tight tracking-tight" data-lang="en">
+        Design-Build Stormwater & Wastewater Systems, General Construction & Environmental Studies
+      </h1>
+      
+      <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto" data-lang="es">
+        En <strong>ASD Building Solutions LLC</strong> integramos <strong>Ingeniería Profesional Licenciada (PE)</strong> y ejecución de obra bajo un mismo techo. Diseñamos, sellamos planos y construimos sistemas de agua de lluvia, sistemas sanitarios de aguas negras, remodelaciones y estudios de plomo y asbesto en todo Puerto Rico.
+      </p>
+      <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto" data-lang="en">
+        At <strong>ASD Building Solutions LLC</strong>, we integrate <strong>Licensed Professional Engineering (PE)</strong> and field execution under one roof. We design, stamp plans, and build stormwater management systems, sanitary sewer infrastructure, renovations, and lead/asbestos studies across Puerto Rico.
+      </p>
 
-        <!-- Etiquetas Rápidas de Credibilidad -->
-        <div class="flex flex-wrap gap-2 pt-1 text-xs font-semibold text-slate-200">
-          <span class="bg-slate-800/90 border border-slate-700 px-3 py-1.5 rounded-md" data-lang="es">✓ Diseño y Construcción (Design-Build PE)</span>
-          <span class="bg-slate-800/90 border border-slate-700 px-3 py-1.5 rounded-md" data-lang="en">✓ Turnkey Design-Build (Licensed PE)</span>
-
-          <span class="bg-slate-800/90 border border-slate-700 px-3 py-1.5 rounded-md" data-lang="es">✓ Sistemas Pluviales y Aguas Negras</span>
-          <span class="bg-slate-800/90 border border-slate-700 px-3 py-1.5 rounded-md" data-lang="en">✓ Stormwater & Wastewater Systems</span>
-
-          <span class="bg-slate-800/90 border border-slate-700 px-3 py-1.5 rounded-md" data-lang="es">✓ Estudios de Plomo y Asbesto</span>
-          <span class="bg-slate-800/90 border border-slate-700 px-3 py-1.5 rounded-md" data-lang="en">✓ Lead & Asbestos Testing</span>
-        </div>
-
-        <div class="pt-4 flex flex-wrap gap-4">
-          <a href="tel:+19784905394" class="gold-bg text-slate-950 font-extrabold px-7 py-4 rounded-lg shadow-xl hover:opacity-90 transition text-sm md:text-base">
-            <span data-lang="es">📞 Llamar Ahora: 978.490.5394</span>
-            <span data-lang="en">📞 Call Now: 978.490.5394</span>
-          </a>
-          <a href="mailto:alberto@asdbuildingsolutions.com?subject=Solicitud%20de%20Cotizaci%C3%B3n%20/%20Proposal%20Request%20-%20ASD%20Building%20Solutions" class="bg-slate-900/70 border border-slate-500 text-white font-semibold px-6 py-4 rounded-lg hover:bg-slate-800 transition text-sm md:text-base">
-            ✉️ alberto@asdbuildingsolutions.com
-          </a>
-        </div>
+      <div class="pt-4 flex flex-wrap justify-center gap-4">
+        <button onclick="openContactModal()" class="gold-bg text-slate-950 font-black px-8 py-4 rounded-xl shadow-xl hover:opacity-90 transition text-sm md:text-base cursor-pointer">
+          <span data-lang="es">📋 Contacto Rápido / Cotizar Proyecto</span>
+          <span data-lang="en">📋 Quick Contact / Request a Quote</span>
+        </button>
+        <a href="tel:+19784905394" class="bg-slate-900/80 border border-slate-600 text-white font-bold px-7 py-4 rounded-xl hover:bg-slate-800 transition text-sm md:text-base">
+          📞 978.490.5394
+        </a>
       </div>
-
-      <!-- Tarjeta Ejecutiva con Logo Grande -->
-      <div class="lg:col-span-5 bg-white text-slate-900 p-8 md:p-10 rounded-2xl shadow-2xl border-t-8 gold-border text-center">
-        <svg class="w-28 h-24 mx-auto mb-3" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="45,8 77,26 77,63 45,81 13,63 13,26" stroke="#0B1D3A" stroke-width="5.5" fill="none"/>
-          <polygon points="45,16 70,30 70,59 45,73 20,59 20,30" stroke="#0B1D3A" stroke-width="2.8" fill="none"/>
-          <polygon points="75,8 107,26 107,63 75,81 43,63 43,26" stroke="#C5A880" stroke-width="5.5" fill="none"/>
-          <polygon points="75,16 100,30 100,59 75,73 50,59 50,30" stroke="#C5A880" stroke-width="2.8" fill="none"/>
-        </svg>
-        <h2 class="text-4xl font-black navy-text tracking-tight leading-none">ASD</h2>
-        <p class="text-xs font-extrabold tracking-[0.25em] gold-text uppercase mt-1 mb-6">Building Solutions LLC</p>
-        
-        <div class="border-t border-slate-200 pt-5 text-left space-y-2.5 text-sm">
-          <p class="flex justify-between border-b border-slate-100 pb-2">
-            <strong class="navy-text" data-lang="es">Dirección Ejecutiva:</strong>
-            <strong class="navy-text" data-lang="en">Executive Leadership:</strong>
-            <span class="font-semibold text-slate-700">Alberto Soto Díaz</span>
-          </p>
-          <p class="flex justify-between border-b border-slate-100 pb-2">
-            <strong class="navy-text" data-lang="es">Dirección Ingeniería PE:</strong>
-            <strong class="navy-text" data-lang="en">PE Engineering Lead:</strong>
-            <span class="font-semibold text-slate-700" data-lang="es">Ing. Capestany, PE</span>
-            <span class="font-semibold text-slate-700" data-lang="en">Eng. Capestany, PE</span>
-          </p>
-          <p class="flex justify-between border-b border-slate-100 pb-2">
-            <strong class="navy-text" data-lang="es">Especialidad Civil:</strong>
-            <strong class="navy-text" data-lang="en">Civil Specialty:</strong>
-            <span class="font-bold text-slate-800" data-lang="es">Pluvial y Aguas Negras</span>
-            <span class="font-bold text-slate-800" data-lang="en">Stormwater & Sewer</span>
-          </p>
-          <p class="flex justify-between border-b border-slate-100 pb-2">
-            <strong class="navy-text" data-lang="es">División Ambiental:</strong>
-            <strong class="navy-text" data-lang="en">Environmental Div.:</strong>
-            <span class="font-semibold text-slate-700" data-lang="es">Plomo y Asbesto</span>
-            <span class="font-semibold text-slate-700" data-lang="en">Lead & Asbestos</span>
-          </p>
-          <p class="flex justify-between border-b border-slate-100 pb-2">
-            <strong class="navy-text" data-lang="es">Red Operativa:</strong>
-            <strong class="navy-text" data-lang="en">Trade Network:</strong>
-            <span class="font-bold text-emerald-700" data-lang="es">+40 Especialistas Disp.</span>
-            <span class="font-bold text-emerald-700" data-lang="en">40+ Specialists Avail.</span>
-          </p>
-          <p class="flex justify-between border-b border-slate-100 pb-2">
-            <strong class="navy-text" data-lang="es">Teléfono Directo:</strong>
-            <strong class="navy-text" data-lang="en">Direct Phone:</strong>
-            <a href="tel:+19784905394" class="font-extrabold navy-text hover:underline">978.490.5394</a>
-          </p>
-          <p class="pt-1">
-            <strong class="navy-text block mb-1" data-lang="es">Correo Oficial:</strong>
-            <strong class="navy-text block mb-1" data-lang="en">Official Email:</strong>
-            <a href="mailto:alberto@asdbuildingsolutions.com" class="text-blue-800 font-semibold underline break-all">alberto@asdbuildingsolutions.com</a>
-          </p>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- Vitrina de Experiencia Institucional y Gubernamental -->
-  <section id="experiencia" class="bg-white py-14 px-4 border-b border-slate-200 shadow-sm">
+  <!-- BLOQUE 2: Experiencia Comprobada -->
+  <section id="experiencia" class="bg-white py-14 px-4 border-b border-slate-200">
     <div class="max-w-6xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-10">
         <span class="text-xs font-extrabold uppercase tracking-[0.2em] gold-text" data-lang="es">Trayectoria Comprobada</span>
         <span class="text-xs font-extrabold uppercase tracking-[0.2em] gold-text" data-lang="en">Proven Track Record</span>
-        
-        <h2 class="text-2xl md:text-3xl font-black navy-text mt-1" data-lang="es">Experiencia en Proyectos Gubernamentales, Federales y Privados</h2>
-        <h2 class="text-2xl md:text-3xl font-black navy-text mt-1" data-lang="en">State, Federal & Commercial Project Experience</h2>
-        
-        <p class="text-slate-600 text-sm md:text-base mt-2" data-lang="es">
-          Ejecución bajo los más altos estándares de cumplimiento regulatorio, seguridad ocupacional (OSHA), control de calidad (QA/QC) y especificaciones técnicas para agencias clave y desarrollos privados en Puerto Rico:
-        </p>
-        <p class="text-slate-600 text-sm md:text-base mt-2" data-lang="en">
-          Project execution adhering to the highest regulatory compliance, occupational safety (OSHA), quality control (QA/QC), and technical specifications for premier agencies and private developments in Puerto Rico:
-        </p>
+        <h2 class="text-2xl md:text-3xl font-black navy-text mt-1" data-lang="es">Experiencia Gubernamental, Federal y Comercial</h2>
+        <h2 class="text-2xl md:text-3xl font-black navy-text mt-1" data-lang="en">State, Federal & Commercial Experience</h2>
       </div>
 
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-        <!-- ASSMCA -->
-        <div class="bg-slate-50 border-2 border-slate-200 hover:border-amber-600/60 p-5 rounded-xl text-center transition shadow-sm">
-          <div class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="es">Agencia Estatal</div>
-          <div class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="en">State Agency</div>
-          <p class="text-2xl font-black navy-text tracking-tight">ASSMCA</p>
-          <p class="text-[11px] text-slate-500 mt-1 leading-snug" data-lang="es">Infraestructura Hospitalaria y Salud Mental</p>
-          <p class="text-[11px] text-slate-500 mt-1 leading-snug" data-lang="en">Healthcare & Mental Health Facilities</p>
+        <div class="bg-slate-50 border-2 border-slate-200 p-5 rounded-xl text-center">
+          <p class="text-xs font-bold uppercase gold-text mb-1" data-lang="es">Salud Mental</p>
+          <p class="text-xs font-bold uppercase gold-text mb-1" data-lang="en">Healthcare</p>
+          <p class="text-2xl font-black navy-text">ASSMCA</p>
         </div>
-
-        <!-- Departamento de Salud -->
-        <div class="bg-slate-50 border-2 border-slate-200 hover:border-amber-600/60 p-5 rounded-xl text-center transition shadow-sm">
-          <div class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="es">Salud Pública</div>
-          <div class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="en">Public Health</div>
-          <p class="text-lg font-black navy-text leading-tight" data-lang="es">Departamento de Salud</p>
-          <p class="text-lg font-black navy-text leading-tight" data-lang="en">Department of Health</p>
-          <p class="text-[11px] text-slate-500 mt-1 leading-snug" data-lang="es">Facilidades Médicas y Clínicas (CDT)</p>
-          <p class="text-[11px] text-slate-500 mt-1 leading-snug" data-lang="en">Medical Centers & Clinical Facilities</p>
+        <div class="bg-slate-50 border-2 border-slate-200 p-5 rounded-xl text-center">
+          <p class="text-xs font-bold uppercase gold-text mb-1" data-lang="es">Salud Pública</p>
+          <p class="text-xs font-bold uppercase gold-text mb-1" data-lang="en">Public Health</p>
+          <p class="text-lg font-black navy-text leading-tight" data-lang="es">Dept. de Salud</p>
+          <p class="text-lg font-black navy-text leading-tight" data-lang="en">Dept. of Health</p>
         </div>
-
-        <!-- DRNA -->
-        <div class="bg-slate-50 border-2 border-slate-200 hover:border-amber-600/60 p-5 rounded-xl text-center transition shadow-sm">
-          <div class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="es">Hidrología y Ambiente</div>
-          <div class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="en">Hydrology & Environment</div>
-          <p class="text-2xl font-black navy-text tracking-tight">DRNA</p>
-          <p class="text-[11px] text-slate-500 mt-1 leading-snug" data-lang="es">Recursos Naturales, Cauces y Control Pluvial</p>
-          <p class="text-[11px] text-slate-500 mt-1 leading-snug" data-lang="en">Natural Resources & Stormwater Control</p>
+        <div class="bg-slate-50 border-2 border-slate-200 p-5 rounded-xl text-center">
+          <p class="text-xs font-bold uppercase gold-text mb-1" data-lang="es">Ambiental y Pluvial</p>
+          <p class="text-xs font-bold uppercase gold-text mb-1" data-lang="en">Environmental</p>
+          <p class="text-2xl font-black navy-text">DRNA</p>
         </div>
-
-        <!-- ACAA -->
-        <div class="bg-slate-50 border-2 border-slate-200 hover:border-amber-600/60 p-5 rounded-xl text-center transition shadow-sm">
-          <div class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="es">Institucional</div>
-          <div class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="en">Institutional</div>
-          <p class="text-2xl font-black navy-text tracking-tight">ACAA</p>
-          <p class="text-[11px] text-slate-500 mt-1 leading-snug" data-lang="es">Remodelación de Áreas Corporativas</p>
-          <p class="text-[11px] text-slate-500 mt-1 leading-snug" data-lang="en">Corporate & Institutional Remodeling</p>
+        <div class="bg-slate-50 border-2 border-slate-200 p-5 rounded-xl text-center">
+          <p class="text-xs font-bold uppercase gold-text mb-1" data-lang="es">Institucional</p>
+          <p class="text-xs font-bold uppercase gold-text mb-1" data-lang="en">Institutional</p>
+          <p class="text-2xl font-black navy-text">ACAA</p>
         </div>
-
-        <!-- FEMA -->
-        <div class="bg-slate-50 border-2 border-slate-200 hover:border-amber-600/60 p-5 rounded-xl text-center transition shadow-sm col-span-2 sm:col-span-1">
-          <div class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="es">Cumplimiento Federal</div>
-          <div class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="en">Federal Compliance</div>
-          <p class="text-2xl font-black navy-text tracking-tight">FEMA</p>
-          <p class="text-[11px] text-slate-500 mt-1 leading-snug" data-lang="es">Mitigación, Recuperación y Reconstrucción</p>
-          <p class="text-[11px] text-slate-500 mt-1 leading-snug" data-lang="en">Mitigation, Recovery & Reconstruction</p>
+        <div class="bg-slate-50 border-2 border-slate-200 p-5 rounded-xl text-center col-span-2 sm:col-span-1">
+          <p class="text-xs font-bold uppercase gold-text mb-1" data-lang="es">Fondos Federales</p>
+          <p class="text-xs font-bold uppercase gold-text mb-1" data-lang="en">Federal Compliance</p>
+          <p class="text-2xl font-black navy-text">FEMA</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NUEVA SECCIÓN ESTRELLA: División Design-Build de Ingeniería Pluvial y Aguas Negras (con Ing. Capestany PE) -->
-  <section id="hidrosanitaria" class="py-20 px-4 bg-slate-900 text-white border-b border-slate-800">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <div class="inline-block px-3.5 py-1 rounded-full border gold-border text-xs font-extrabold uppercase tracking-widest gold-text mb-3">
-          <span data-lang="es">División Design-Build • Ingeniería Civil e Hidrosanitaria</span>
-          <span data-lang="en">Design-Build Division • Civil & Hydro-Sanitary Engineering</span>
-        </div>
-        <h2 class="text-3xl md:text-4xl font-black tracking-tight" data-lang="es">
-          Diseño y Construcción de Sistemas de Agua de Lluvia y Aguas Negras
-        </h2>
-        <h2 class="text-3xl md:text-4xl font-black tracking-tight" data-lang="en">
-          Stormwater Management & Sanitary Wastewater Design-Build
-        </h2>
-        <p class="text-slate-300 mt-3 text-sm md:text-base leading-relaxed" data-lang="es">
-          Bajo la dirección técnica de ingeniería licenciada (<strong>Ing. Capestany, PE</strong> — más de 50 años de experiencia en ingeniería civil e infraestructura) y la ejecución constructiva de <strong>ASD Building Solutions LLC</strong>, ofrecemos la solución completa bajo un mismo techo: <strong>diseñamos, sellamos planos y construimos</strong> su proyecto.
-        </p>
-        <p class="text-slate-300 mt-3 text-sm md:text-base leading-relaxed" data-lang="en">
-          Under the licensed technical direction of <strong>Eng. Capestany, PE</strong> (over 50 years of civil engineering mastery) and the field execution of <strong>ASD Building Solutions LLC</strong>, we deliver complete single-source accountability: <strong>we design, stamp plans, and build</strong> your infrastructure project.
-        </p>
-      </div>
-
-      <!-- 3 Pilares Técnicos: Pluvial, Aguas Negras, Permisología/Certificación -->
-      <div class="grid md:grid-cols-3 gap-8 mb-12">
-        
-        <!-- Pilar 1: Manejo de Agua de Lluvia -->
-        <div class="navy-card border-2 border-slate-700 hover:border-amber-500/60 p-8 rounded-2xl transition flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl gold-bg text-slate-950 flex items-center justify-center text-2xl font-black mb-5">🌧️</div>
-            <h3 class="text-xl font-black gold-text mb-3" data-lang="es">Manejo de Aguas de Lluvia y Drenaje Pluvial</h3>
-            <h3 class="text-xl font-black gold-text mb-3" data-lang="en">Stormwater Management & Drainage Systems</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-4" data-lang="es">
-              Soluciones de ingeniería y obra civil para resolver escorrentías, inundaciones y control pluvial en desarrollos comerciales, industriales y municipales:
-            </p>
-            <p class="text-slate-300 text-sm leading-relaxed mb-4" data-lang="en">
-              Engineering and civil construction solutions to resolve runoff, flooding, and drainage challenges across commercial, industrial, and municipal sites:
-            </p>
-            <ul class="space-y-2 text-xs text-slate-200 font-medium">
-              <li class="flex items-start gap-2">
-                <span class="gold-text font-black">✓</span>
-                <span data-lang="es">Estudios Hidrológicos-Hidráulicos (H&H)</span>
-                <span data-lang="en">Hydrologic & Hydraulic (H&H) Studies</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="gold-text font-black">✓</span>
-                <span data-lang="es">Diseño y construcción de tuberías pluviales, alcantarillas, cunetones y charcas de retención/detención</span>
-                <span data-lang="en">Design & construction of storm sewers, culverts, swales, and retention/detention basins</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="gold-text font-black">✓</span>
-                <span data-lang="es">Planes CES y SWPPP (Control de Erosión y Sedimentación ante EPA / DRNA)</span>
-                <span data-lang="en">SWPPP & Erosion/Sedimentation Control Plans (EPA / DRNA compliance)</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Pilar 2: Manejo de Aguas Negras -->
-        <div class="navy-card border-2 border-slate-700 hover:border-amber-500/60 p-8 rounded-2xl transition flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl gold-bg text-slate-950 flex items-center justify-center text-2xl font-black mb-5">🚰</div>
-            <h3 class="text-xl font-black gold-text mb-3" data-lang="es">Diseño y Construcción de Sistemas de Aguas Negras</h3>
-            <h3 class="text-xl font-black gold-text mb-3" data-lang="en">Sanitary Sewer & Wastewater Infrastructure</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-4" data-lang="es">
-              Infraestructura sanitaria completa diseñada por Ingeniero PE y construida con maquinaria y personal especializado cumpliendo códigos de la AAA y Salud:
-            </p>
-            <p class="text-slate-300 text-sm leading-relaxed mb-4" data-lang="en">
-              Complete sanitary infrastructure designed by a Licensed PE and built with specialized crews adhering to PRASA (AAA) and Department of Health codes:
-            </p>
-            <ul class="space-y-2 text-xs text-slate-200 font-medium">
-              <li class="flex items-start gap-2">
-                <span class="gold-text font-black">✓</span>
-                <span data-lang="es">Diseño y construcción de líneas de alcantarillado sanitario, registros (manholes) y acometidas</span>
-                <span data-lang="en">Sanitary sewer mainlines, manholes, and lateral connections design & installation</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="gold-text font-black">✓</span>
-                <span data-lang="es">Estaciones de bombeo sanitario y sistemas de tratamiento de aguas residuales</span>
-                <span data-lang="en">Sanitary lift/pump stations and wastewater treatment systems</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="gold-text font-black">✓</span>
-                <span data-lang="es">Sistemas sépticos comerciales e industriales avanzados y plantas de tratamiento</span>
-                <span data-lang="en">Advanced commercial/industrial septic systems and package treatment plants</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Pilar 3: Planos PE, Endosos y Protocolo Comercial -->
-        <div class="navy-card border-2 border-slate-700 hover:border-amber-500/60 p-8 rounded-2xl transition flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl gold-bg text-slate-950 flex items-center justify-center text-2xl font-black mb-5">📐</div>
-            <h3 class="text-xl font-black gold-text mb-3" data-lang="es">Planos Sellados PE, Endosos y Ejecución por Fases</h3>
-            <h3 class="text-xl font-black gold-text mb-3" data-lang="en">Stamped PE Plans, Permitting & Phased Execution</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-4" data-lang="es">
-              Atendemos tanto subastas gubernamentales como desarrollos comerciales y privados bajo un protocolo técnico y contractual riguroso:
-            </p>
-            <p class="text-slate-300 text-sm leading-relaxed mb-4" data-lang="en">
-              Serving both government tenders and private commercial developments under a strict technical and contractual framework:
-            </p>
-            <ul class="space-y-2 text-xs text-slate-200 font-medium">
-              <li class="flex items-start gap-2">
-                <span class="gold-text font-black">✓</span>
-                <span data-lang="es"><strong>Fase 1 (Ingeniería):</strong> Levantamiento, cálculos, planos sellados PE y endosos (AAA, DRNA, OGPe, EPA)</span>
-                <span data-lang="en"><strong>Phase 1 (Engineering):</strong> Site survey, calculations, PE-stamped plans & agency permits (PRASA, DRNA, OGPe)</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="gold-text font-black">✓</span>
-                <span data-lang="es"><strong>Fase 2 (Construcción):</strong> Ejecución por hitos verificables, pruebas hidrostáticas e inspección PE</span>
-                <span data-lang="en"><strong>Phase 2 (Construction):</strong> Milestone-based execution, hydrostatic testing & PE inspection</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="gold-text font-black">✓</span>
-                <span data-lang="es"><strong>Cierre Técnico:</strong> Planos As-Built y Certificación Final PE para Permiso de Uso</span>
-                <span data-lang="en"><strong>Technical Closeout:</strong> As-Built drawings & Final PE Certification for Occupancy</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
+  <!-- BLOQUE 3: Nuestras 4 Divisiones (Todo en un solo lugar, sin duplicar) -->
+  <section id="divisiones" class="py-20 px-4 max-w-6xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="es">Soluciones Bajo un Mismo Techo</span>
+      <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="en">Single-Source Turnkey Solutions</span>
+      <h2 class="text-3xl font-black navy-text mt-2" data-lang="es">Nuestras 4 Divisiones Especializadas</h2>
+      <h2 class="text-3xl font-black navy-text mt-2" data-lang="en">Our 4 Specialized Divisions</h2>
+      <p class="text-slate-600 mt-2 text-sm md:text-base" data-lang="es">
+        Trabajamos proyectos gubernamentales y desarrollos comerciales privados bajo contrato estructurado por fases (Fase 1: Diseño y Planos PE • Fase 2: Construcción por Hitos y Certificación Final).
+      </p>
+      <p class="text-slate-600 mt-2 text-sm md:text-base" data-lang="en">
+        We execute government projects and private commercial developments under structured phased contracts (Phase 1: PE Design & Plans • Phase 2: Milestone Construction & Final Certification).
+      </p>
     </div>
-  </section>
 
-  <!-- División Especializada: Estudios de Plomo y Asbesto -->
-  <section id="ambiental" class="py-16 px-4 bg-slate-100 border-b border-slate-200">
-    <div class="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden grid md:grid-cols-12">
-      <div class="md:col-span-8 p-8 md:p-12 space-y-4">
-        <div class="inline-block px-3 py-1 rounded bg-amber-100 text-amber-900 text-xs font-extrabold uppercase tracking-wider">
-          <span data-lang="es">División Ambiental Especializada</span>
-          <span data-lang="en">Specialized Environmental Division</span>
-        </div>
-        
-        <h2 class="text-2xl md:text-3xl font-black navy-text" data-lang="es">
-          Estudios de Plomo y Asbesto (Lead & Asbestos Testing)
-        </h2>
-        <h2 class="text-2xl md:text-3xl font-black navy-text" data-lang="en">
-          Certified Lead & Asbestos Testing and Environmental Studies
-        </h2>
-
-        <p class="text-slate-600 text-sm md:text-base leading-relaxed" data-lang="es">
-          Realizamos inspecciones técnicas, muestreo certificado, estudios ambientales de materiales con contenido de <strong>plomo (LBP) y asbesto (ACM)</strong>, evaluación de riesgos y documentación reglamentaria requerida antes de intervenciones de remodelación, demolición o proyectos financiados con fondos federales (FEMA / CDBG-DR) y estatales (DRNA / EQB / EPA).
-        </p>
-        <p class="text-slate-600 text-sm md:text-base leading-relaxed" data-lang="en">
-          We perform technical inspections, certified laboratory sampling, and environmental assessments for <strong>Lead-Based Paint (LBP) and Asbestos-Containing Materials (ACM)</strong>, including risk evaluations and regulatory documentation required prior to renovation, demolition, or federally/state-funded projects (FEMA / CDBG-DR / DRNA / EPA / OSHA).
-        </p>
-
-        <div class="grid sm:grid-cols-2 gap-3 pt-2 text-sm font-semibold navy-text">
-          <div class="flex items-center gap-2">
-            <span class="gold-text font-black">✓</span>
-            <span data-lang="es">Inspección y Muestreo Certificado</span>
-            <span data-lang="en">Certified Inspection & Lab Sampling</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="gold-text font-black">✓</span>
-            <span data-lang="es">Informes Técnicos para Permisos y Demolición</span>
-            <span data-lang="en">Technical Reports for Permits & Demolition</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="gold-text font-black">✓</span>
-            <span data-lang="es">Cumplimiento EPA, OSHA y DRNA</span>
-            <span data-lang="en">Full EPA, OSHA & DRNA Compliance</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="gold-text font-black">✓</span>
-            <span data-lang="es">Protocolos para Proyectos FEMA y Salud</span>
-            <span data-lang="en">FEMA & Healthcare Facility Protocols</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="md:col-span-4 navy-card text-white p-8 md:p-10 flex flex-col justify-center items-center text-center border-t md:border-t-0 md:border-l border-slate-800">
-        <div class="w-16 h-16 rounded-full gold-bg text-slate-950 flex items-center justify-center text-3xl font-black mb-4 shadow-md">
-          🔬
-        </div>
-        <h3 class="text-xl font-extrabold gold-text mb-2" data-lang="es">¿Requiere un Estudio Ambiental?</h3>
-        <h3 class="text-xl font-extrabold gold-text mb-2" data-lang="en">Need an Environmental Study?</h3>
-        
-        <p class="text-xs text-slate-300 leading-relaxed mb-6" data-lang="es">
-          Coordinamos visitas de inspección y entrega rápida de resultados para no detener el cronograma de su obra.
-        </p>
-        <p class="text-xs text-slate-300 leading-relaxed mb-6" data-lang="en">
-          We coordinate rapid site inspections and fast turnaround reports to keep your construction schedule moving.
-        </p>
-        
-        <a href="tel:+19784905394" class="w-full gold-bg text-slate-950 font-extrabold py-3 px-5 rounded-lg hover:opacity-90 transition text-sm">
-          <span data-lang="es">Solicitar Estudio: 978.490.5394</span>
-          <span data-lang="en">Schedule Testing: 978.490.5394</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Servicios Principales -->
-  <section id="servicios" class="py-20 px-4 max-w-6xl mx-auto">
-    <div class="text-center max-w-2xl mx-auto mb-14">
-      <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="es">Nuestras Divisiones</span>
-      <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="en">Core Divisions</span>
+    <div class="grid md:grid-cols-2 gap-8">
       
-      <h2 class="text-3xl font-black navy-text mt-2" data-lang="es">Soluciones Integrales de Ingeniería y Construcción</h2>
-      <h2 class="text-3xl font-black navy-text mt-2" data-lang="en">Comprehensive Engineering & Construction Solutions</h2>
-      
-      <p class="text-slate-600 mt-3" data-lang="es">Cumplimiento estricto de códigos vigentes, control presupuestario y ejecución estructurada en proyectos públicos y desarrollos privados.</p>
-      <p class="text-slate-600 mt-3" data-lang="en">Strict building code compliance, budget control, and structured execution across public sector and private commercial developments.</p>
-    </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="bg-white p-7 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-        <div class="w-11 h-11 navy-card text-white rounded-lg flex items-center justify-center text-lg font-extrabold mb-5">01</div>
-        <h3 class="text-lg font-extrabold navy-text mb-2.5" data-lang="es">Design-Build Pluvial y Aguas Negras</h3>
-        <h3 class="text-lg font-extrabold navy-text mb-2.5" data-lang="en">Stormwater & Sewer Design-Build</h3>
+      <!-- 01: Agua de Lluvia y Aguas Negras (Design-Build) -->
+      <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 gold-border border-x border-b border-slate-200 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="px-3 py-1 rounded bg-slate-900 text-amber-300 text-xs font-black uppercase">01 • Design-Build PE</span>
+          <span class="text-2xl">🌧️🚰</span>
+        </div>
+        <h3 class="text-xl font-black navy-text" data-lang="es">Diseño y Construcción: Agua de Lluvia y Aguas Negras</h3>
+        <h3 class="text-xl font-black navy-text" data-lang="en">Stormwater & Sanitary Wastewater Design-Build</h3>
         <p class="text-slate-600 text-sm leading-relaxed" data-lang="es">
-          Diseño PE y construcción de drenajes pluviales, control de inundaciones, alcantarillado sanitario, plantas de tratamiento y sistemas sépticos comerciales.
+          Diseñamos con Ingeniero PE, tramitamos endosos (AAA, DRNA, OGPe, EPA) y construimos la obra civil completa:
         </p>
         <p class="text-slate-600 text-sm leading-relaxed" data-lang="en">
-          PE design and construction of storm drainage, flood control, sanitary sewer lines, treatment plants, and commercial septic infrastructure.
+          We design with Licensed PE Engineers, secure agency permits (PRASA, DRNA, OGPe, EPA), and build the complete civil works:
+        </p>
+        <ul class="space-y-1.5 text-xs text-slate-700 font-semibold pt-1">
+          <li data-lang="es">✓ <strong>Aguas de Lluvia (Escorrentías):</strong> Estudios H&H, tuberías pluviales, charcas de retención/detención, cunetones y Planes CES / SWPPP.</li>
+          <li data-lang="en">✓ <strong>Stormwater Management:</strong> H&H studies, storm drainage pipes, retention/detention basins, swales & SWPPP plans.</li>
+          <li data-lang="es">✓ <strong>Aguas Negras (Sanitario):</strong> Líneas sanitarias, registros (manholes), estaciones de bombeo, plantas de tratamiento y sistemas sépticos comerciales.</li>
+          <li data-lang="en">✓ <strong>Sanitary Wastewater:</strong> Sewer mainlines, manholes, lift stations, treatment plants & commercial septic systems.</li>
+        </ul>
+      </div>
+
+      <!-- 02: Estudios de Plomo y Asbesto -->
+      <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 gold-border border-x border-b border-slate-200 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="px-3 py-1 rounded bg-amber-100 text-amber-900 text-xs font-black uppercase" data-lang="es">02 • División Ambiental</span>
+          <span class="px-3 py-1 rounded bg-amber-100 text-amber-900 text-xs font-black uppercase" data-lang="en">02 • Environmental Division</span>
+          <span class="text-2xl">🔬</span>
+        </div>
+        <h3 class="text-xl font-black navy-text" data-lang="es">Estudios de Plomo y Asbesto (Lead & Asbestos)</h3>
+        <h3 class="text-xl font-black navy-text" data-lang="en">Certified Lead & Asbestos Testing Studies</h3>
+        <p class="text-slate-600 text-sm leading-relaxed" data-lang="es">
+          Inspecciones técnicas, muestreo certificado de laboratorio y estudios ambientales de materiales con plomo (LBP) y asbesto (ACM) previo a remodelaciones o demoliciones.
+        </p>
+        <p class="text-slate-600 text-sm leading-relaxed" data-lang="en">
+          Technical inspections, certified lab sampling, and environmental assessments for Lead-Based Paint (LBP) and Asbestos (ACM) prior to renovations or demolitions.
+        </p>
+        <ul class="space-y-1.5 text-xs text-slate-700 font-semibold pt-1">
+          <li data-lang="es">✓ Informes reglamentarios para permisos de demolición y construcción.</li>
+          <li data-lang="en">✓ Regulatory technical reports for demolition and building permits.</li>
+          <li data-lang="es">✓ Cumplimiento total con protocolos de EPA, OSHA, DRNA, Salud y FEMA.</li>
+          <li data-lang="en">✓ Full compliance with EPA, OSHA, DRNA, Health Dept., and FEMA protocols.</li>
+        </ul>
+      </div>
+
+      <!-- 03: Construcción General y Remodelación -->
+      <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="px-3 py-1 rounded bg-slate-100 text-slate-800 text-xs font-black uppercase" data-lang="es">03 • Obra Civil y Comercial</span>
+          <span class="px-3 py-1 rounded bg-slate-100 text-slate-800 text-xs font-black uppercase" data-lang="en">03 • Civil & Commercial Works</span>
+          <span class="text-2xl">🏗️</span>
+        </div>
+        <h3 class="text-xl font-black navy-text" data-lang="es">Construcción General y Remodelación Institucional</h3>
+        <h3 class="text-xl font-black navy-text" data-lang="en">General Construction & Institutional Remodeling</h3>
+        <p class="text-slate-600 text-sm leading-relaxed" data-lang="es">
+          Ejecución de proyectos para hospitales, clínicas, agencias de gobierno y comercios privados: estructuras en hormigón, interiores corporativos, fachadas, electricidad y plomería.
+        </p>
+        <p class="text-slate-600 text-sm leading-relaxed" data-lang="en">
+          Turnkey execution for hospitals, clinics, government agencies, and commercial properties: concrete structures, corporate interiors, facades, electrical, and mechanical works.
         </p>
       </div>
 
-      <div class="bg-white p-7 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-        <div class="w-11 h-11 navy-card text-white rounded-lg flex items-center justify-center text-lg font-extrabold mb-5">02</div>
-        <h3 class="text-lg font-extrabold navy-text mb-2.5" data-lang="es">Construcción General y Remodelación</h3>
-        <h3 class="text-lg font-extrabold navy-text mb-2.5" data-lang="en">General Construction & Remodeling</h3>
+      <!-- 04: Estimados de Costos, Licitaciones y Gerencia QA/QC -->
+      <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="px-3 py-1 rounded bg-slate-100 text-slate-800 text-xs font-black uppercase" data-lang="es">04 • Ingeniería de Costos</span>
+          <span class="px-3 py-1 rounded bg-slate-100 text-slate-800 text-xs font-black uppercase" data-lang="en">04 • Cost Engineering</span>
+          <span class="text-2xl">📐</span>
+        </div>
+        <h3 class="text-xl font-black navy-text" data-lang="es">Estimados de Costos, Licitaciones y Gerencia QA/QC</h3>
+        <h3 class="text-xl font-black navy-text" data-lang="en">Cost Estimating, Bidding & QA/QC Management</h3>
         <p class="text-slate-600 text-sm leading-relaxed" data-lang="es">
-          Ejecución llave en mano de facilidades hospitalarias, gubernamentales, comerciales e industriales. Remodelación de interiores corporativos y obra civil.
+          Cuantificación precisa de planos (Takeoffs), preparación de Schedule of Values (SOV), estructuración de subastas públicas/privadas, supervisión de seguridad y control de calidad.
         </p>
         <p class="text-slate-600 text-sm leading-relaxed" data-lang="en">
-          Turnkey execution of healthcare, government, commercial, and industrial facilities. Corporate interior renovations and civil works.
+          Accurate blueprint quantity takeoffs, Schedule of Values (SOV) preparation, public/private bid structuring, site safety, and quality control (QA/QC) supervision.
         </p>
       </div>
 
-      <div class="bg-white p-7 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-        <div class="w-11 h-11 navy-card text-white rounded-lg flex items-center justify-center text-lg font-extrabold mb-5">03</div>
-        <h3 class="text-lg font-extrabold navy-text mb-2.5" data-lang="es">Estudios de Plomo y Asbesto</h3>
-        <h3 class="text-lg font-extrabold navy-text mb-2.5" data-lang="en">Lead & Asbestos Studies</h3>
-        <p class="text-slate-600 text-sm leading-relaxed" data-lang="es">
-          Evaluación ambiental, muestreo de laboratorio, identificación de materiales peligrosos y planes de manejo cumpliendo con EPA, OSHA y DRNA.
-        </p>
-        <p class="text-slate-600 text-sm leading-relaxed" data-lang="en">
-          Environmental testing, laboratory sampling, hazardous material identification, and management plans adhering to EPA, OSHA, and DRNA standards.
-        </p>
-      </div>
-
-      <div class="bg-white p-7 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
-        <div class="w-11 h-11 navy-card text-white rounded-lg flex items-center justify-center text-lg font-extrabold mb-5">04</div>
-        <h3 class="text-lg font-extrabold navy-text mb-2.5" data-lang="es">Estimados de Costos y Gerencia QA/QC</h3>
-        <h3 class="text-lg font-extrabold navy-text mb-2.5" data-lang="en">Cost Estimating & QA/QC Management</h3>
-        <p class="text-slate-600 text-sm leading-relaxed" data-lang="es">
-          Cuantificación detallada de planos (Takeoffs), preparación de Schedule of Values (SOV), estructuración de licitaciones y supervisión técnica de obra.
-        </p>
-        <p class="text-slate-600 text-sm leading-relaxed" data-lang="en">
-          Detailed blueprint quantity takeoffs, Schedule of Values (SOV) preparation, bid structuring, and technical site supervision.
-        </p>
-      </div>
     </div>
   </section>
 
-  <!-- Red de Contratistas y Fuerza Laboral Disponible -->
-  <section id="personal" class="navy-bg text-white py-20 px-4">
+  <!-- BLOQUE 4: Red de Contratistas Especializados (+40 Profesionales Disponibles) -->
+  <section id="red" class="navy-bg text-white py-16 px-4">
     <div class="max-w-6xl mx-auto">
-      <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="text-center max-w-3xl mx-auto mb-12">
         <span class="text-xs font-bold uppercase tracking-widest gold-text" data-lang="es">Capacidad de Movilización Escalable</span>
         <span class="text-xs font-bold uppercase tracking-widest gold-text" data-lang="en">Scalable Mobilization Capacity</span>
-        
-        <h2 class="text-3xl md:text-4xl font-black mt-2" data-lang="es">Red de Contratistas Especializados (+40 Profesionales Disponibles)</h2>
-        <h2 class="text-3xl md:text-4xl font-black mt-2" data-lang="en">Specialized Trade Contractor Network (40+ Professionals Available)</h2>
-        
-        <p class="text-slate-300 mt-3 text-sm md:text-base" data-lang="es">
-          Operamos bajo un modelo ágil de dirección ejecutiva e ingeniería PE respaldado por una red consolidada de subcontratistas menores y brigadas técnicas certificadas, movilizando el personal exacto que cada fase de su obra requiere.
+        <h2 class="text-2xl md:text-3xl font-black mt-2" data-lang="es">Red de Contratistas Especializados (+40 Profesionales Disponibles)</h2>
+        <h2 class="text-2xl md:text-3xl font-black mt-2" data-lang="en">Specialized Trade Contractor Network (40+ Professionals Available)</h2>
+        <p class="text-slate-300 mt-2 text-sm" data-lang="es">
+          Gerencia directa respaldada por una red consolidada de ingenieros PE aliados, subcontratistas menores y brigadas técnicas certificadas que se movilizan según el alcance de cada proyecto.
         </p>
-        <p class="text-slate-300 mt-3 text-sm md:text-base" data-lang="en">
-          We operate through an agile executive and PE-led management model backed by an established network of specialized trade contractors and certified technical crews, deploying the exact workforce required for each phase of your project.
+        <p class="text-slate-300 mt-2 text-sm" data-lang="en">
+          Direct executive management backed by an established network of partner PE engineers, specialized trade contractors, and certified crews deployed according to project scope.
         </p>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
-        <div class="navy-card border border-slate-700 p-6 rounded-xl text-center">
-          <div class="text-2xl mb-3">📐</div>
-          <h3 class="font-bold gold-text text-base mb-2" data-lang="es">Ingeniería PE</h3>
-          <h3 class="font-bold gold-text text-base mb-2" data-lang="en">Licensed PE Engineering</h3>
-          <p class="text-xs text-slate-300 leading-relaxed" data-lang="es">Diseño civil, pluvial y sanitario, planos sellados, estudios H&H, certificaciones e inspección estructural.</p>
-          <p class="text-xs text-slate-300 leading-relaxed" data-lang="en">Civil, stormwater, and sanitary design, stamped plans, H&H studies, certifications, and structural inspection.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 text-center">
+        <div class="navy-card border border-slate-700 p-5 rounded-xl">
+          <div class="text-2xl mb-2">📐</div>
+          <h3 class="font-bold gold-text text-sm" data-lang="es">Ingenieros PE Aliados</h3>
+          <h3 class="font-bold gold-text text-sm" data-lang="en">Partner PE Engineers</h3>
+          <p class="text-[11px] text-slate-300 mt-1" data-lang="es">Planos sellados, H&H, pluvial, sanitario y certificaciones.</p>
+          <p class="text-[11px] text-slate-300 mt-1" data-lang="en">Stamped plans, H&H, stormwater, sewer & certifications.</p>
         </div>
-
-        <div class="navy-card border border-slate-700 p-6 rounded-xl text-center">
-          <div class="text-2xl mb-3">🔧</div>
-          <h3 class="font-bold gold-text text-base mb-2" data-lang="es">Brigadas Hidrosanitarias</h3>
-          <h3 class="font-bold gold-text text-base mb-2" data-lang="en">Civil & Utility Crews</h3>
-          <p class="text-xs text-slate-300 leading-relaxed" data-lang="es">Instalación de tuberías pluviales y sanitarias, registros, acometidas AAA, sistemas sépticos y plomería comercial.</p>
-          <p class="text-xs text-slate-300 leading-relaxed" data-lang="en">Installation of storm and sanitary pipelines, manholes, PRASA connections, septic systems, and commercial plumbing.</p>
+        <div class="navy-card border border-slate-700 p-5 rounded-xl">
+          <div class="text-2xl mb-2">🔧</div>
+          <h3 class="font-bold gold-text text-sm" data-lang="es">Brigadas Hidrosanitarias</h3>
+          <h3 class="font-bold gold-text text-sm" data-lang="en">Utility & Plumbing Crews</h3>
+          <p class="text-[11px] text-slate-300 mt-1" data-lang="es">Tuberías pluviales, aguas negras, registros y plomería.</p>
+          <p class="text-[11px] text-slate-300 mt-1" data-lang="en">Storm/sanitary pipelines, manholes & commercial plumbing.</p>
         </div>
-
-        <div class="navy-card border border-slate-700 p-6 rounded-xl text-center">
-          <div class="text-2xl mb-3">🚜</div>
-          <h3 class="font-bold gold-text text-base mb-2" data-lang="es">Equipo Pesado y Tierra</h3>
-          <h3 class="font-bold gold-text text-base mb-2" data-lang="en">Heavy Equipment & Earthwork</h3>
-          <p class="text-xs text-slate-300 leading-relaxed" data-lang="es">Operadores y maquinaria para excavación de trincheras, movimiento de tierra, charcas de retención y demolición.</p>
-          <p class="text-xs text-slate-300 leading-relaxed" data-lang="en">Operators and machinery for trench excavation, earthmoving, retention ponds, grading, and demolition.</p>
+        <div class="navy-card border border-slate-700 p-5 rounded-xl">
+          <div class="text-2xl mb-2">🚜</div>
+          <h3 class="font-bold gold-text text-sm" data-lang="es">Equipo Pesado y Tierra</h3>
+          <h3 class="font-bold gold-text text-sm" data-lang="en">Heavy Equipment & Civil</h3>
+          <p class="text-[11px] text-slate-300 mt-1" data-lang="es">Excavación, trincheras, movimiento de tierra y demolición.</p>
+          <p class="text-[11px] text-slate-300 mt-1" data-lang="en">Trenching, earthmoving, retention ponds & demolition.</p>
         </div>
-
-        <div class="navy-card border border-slate-700 p-6 rounded-xl text-center">
-          <div class="text-2xl mb-3">⚡</div>
-          <h3 class="font-bold gold-text text-base mb-2" data-lang="es">Contratistas Eléctricos</h3>
-          <h3 class="font-bold gold-text text-base mb-2" data-lang="en">Electrical Contractors</h3>
-          <p class="text-xs text-slate-300 leading-relaxed" data-lang="es">Instalaciones eléctricas comerciales e industriales, bombas sanitarias, subestaciones, paneles y controles.</p>
-          <p class="text-xs text-slate-300 leading-relaxed" data-lang="en">Commercial and industrial electrical installations, lift station power, substations, panels, and controls.</p>
+        <div class="navy-card border border-slate-700 p-5 rounded-xl">
+          <div class="text-2xl mb-2">⚡</div>
+          <h3 class="font-bold gold-text text-sm" data-lang="es">Contratistas Eléctricos</h3>
+          <h3 class="font-bold gold-text text-sm" data-lang="en">Electrical Contractors</h3>
+          <p class="text-[11px] text-slate-300 mt-1" data-lang="es">Sistemas eléctricos comerciales, paneles y bombas.</p>
+          <p class="text-[11px] text-slate-300 mt-1" data-lang="en">Commercial electrical systems, panels & pump stations.</p>
         </div>
-
-        <div class="navy-card border border-slate-700 p-6 rounded-xl text-center">
-          <div class="text-2xl mb-3">🪚</div>
-          <h3 class="font-bold gold-text text-base mb-2" data-lang="es">Hormigón y Carpintería</h3>
-          <h3 class="font-bold gold-text text-base mb-2" data-lang="en">Concrete & Carpentry</h3>
-          <p class="text-xs text-slate-300 leading-relaxed" data-lang="es">Formaletería estructural en hormigón, cabezales, cunetones, framing metálico, gypsum board y terminaciones.</p>
-          <p class="text-xs text-slate-300 leading-relaxed" data-lang="en">Structural concrete formwork, headwalls, swales, metal framing, drywall, and architectural finishes.</p>
+        <div class="navy-card border border-slate-700 p-5 rounded-xl col-span-2 sm:col-span-1">
+          <div class="text-2xl mb-2">🪚</div>
+          <h3 class="font-bold gold-text text-sm" data-lang="es">Hormigón e Interiores</h3>
+          <h3 class="font-bold gold-text text-sm" data-lang="en">Concrete & Interiors</h3>
+          <p class="text-[11px] text-slate-300 mt-1" data-lang="es">Estructuras de hormigón, cunetones, drywall y acústicos.</p>
+          <p class="text-[11px] text-slate-300 mt-1" data-lang="en">Concrete structures, swales, metal framing & finishes.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Liderazgo Ejecutivo y Dirección Técnica -->
-  <section id="liderazgo" class="bg-white border-b border-slate-200 py-16 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="es">Liderazgo y Respaldo Técnico</span>
-        <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="en">Executive & Technical Leadership</span>
-        <h2 class="text-2xl md:text-3xl font-black navy-text mt-1" data-lang="es">Dirección Ejecutiva e Ingeniería Licenciada</h2>
-        <h2 class="text-2xl md:text-3xl font-black navy-text mt-1" data-lang="en">Executive Management & Licensed Engineering</h2>
+  <!-- BLOQUE 5: Liderazgo Ejecutivo y Llamado a la Acción -->
+  <section id="liderazgo" class="py-16 px-4 bg-white">
+    <div class="max-w-5xl mx-auto bg-slate-50 border-2 border-slate-200 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="space-y-2 max-w-xl">
+        <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="es">Liderazgo Ejecutivo</span>
+        <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="en">Executive Leadership</span>
+        <h2 class="text-2xl md:text-3xl font-black navy-text">Alberto Soto Díaz</h2>
+        <p class="text-sm font-bold text-slate-500">Managing Member | General Contractor & Senior Estimator</p>
+        <p class="text-slate-600 text-sm leading-relaxed pt-1" data-lang="es">
+          Más de 15 años de experiencia liderando proyectos de construcción e infraestructura, estudios ambientales y estimación avanzada en Puerto Rico bajo estándares de <strong>ASSMCA, Departamento de Salud, DRNA, ACAA y FEMA</strong>.
+        </p>
+        <p class="text-slate-600 text-sm leading-relaxed pt-1" data-lang="en">
+          Over 15 years of experience leading construction and infrastructure projects, environmental studies, and senior cost estimating in Puerto Rico under <strong>ASSMCA, Department of Health, DRNA, ACAA, and FEMA</strong> standards.
+        </p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Alberto Soto Díaz -->
-        <div class="bg-slate-50 p-8 rounded-2xl border-2 border-slate-200 space-y-3">
-          <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="es">Dirección de Operaciones y Estimados</span>
-          <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="en">Operations & Estimating Leadership</span>
-          <h3 class="text-2xl font-black navy-text">Alberto Soto Díaz</h3>
-          <p class="text-sm font-bold text-slate-500">Managing Member | General Contractor & Senior Estimator</p>
-          <p class="text-slate-600 text-sm leading-relaxed pt-2" data-lang="es">
-            Con más de 15 años de trayectoria dirigiendo operaciones de construcción comercial e institucional, control de calidad (QA/QC), estudios ambientales y estimación avanzada en Puerto Rico. Experiencia comprobada ejecutando proyectos bajo estándares de <strong>ASSMCA, Departamento de Salud, DRNA, ACAA y FEMA</strong>, coordinando una red técnica de más de 40 especialistas.
-          </p>
-          <p class="text-slate-600 text-sm leading-relaxed pt-2" data-lang="en">
-            Over 15 years of experience leading commercial and institutional construction operations, quality control (QA/QC), environmental studies, and senior cost estimating across Puerto Rico. Proven track record under <strong>ASSMCA, Department of Health, DRNA, ACAA, and FEMA</strong> standards, coordinating a vetted network of over 40 trade professionals.
-          </p>
-        </div>
-
-        <!-- Ing. Capestany, PE -->
-        <div class="bg-slate-50 p-8 rounded-2xl border-2 border-slate-200 space-y-3">
-          <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="es">Dirección de Ingeniería Design-Build</span>
-          <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="en">Design-Build Engineering Direction</span>
-          <h3 class="text-2xl font-black navy-text" data-lang="es">Ing. Capestany, PE</h3>
-          <h3 class="text-2xl font-black navy-text" data-lang="en">Eng. Capestany, PE</h3>
-          <p class="text-sm font-bold text-slate-500" data-lang="es">Ingeniero Profesional Licenciado (PE) | Especialista Civil, Pluvial y Sanitario</p>
-          <p class="text-sm font-bold text-slate-500" data-lang="en">Licensed Professional Engineer (PE) | Civil, Stormwater & Sanitary Specialist</p>
-          <p class="text-slate-600 text-sm leading-relaxed pt-2" data-lang="es">
-            Ingeniero Profesional senior con décadas de experiencia práctica en el diseño, cálculo y certificación de infraestructura en Puerto Rico. Lidera la división de diseño de <strong>sistemas de manejo de aguas de lluvia (escorrentías / H&H) y sistemas de aguas negras (alcantarillado sanitario y tratamiento)</strong>, garantizando planos precisos, viabilidad constructiva y cumplimiento ante AAA, DRNA, OGPe y EPA.
-          </p>
-          <p class="text-slate-600 text-sm leading-relaxed pt-2" data-lang="en">
-            Senior Licensed Professional Engineer bringing decades of hands-on mastery in infrastructure design, calculations, and certifications across Puerto Rico. Leads our design division for <strong>stormwater management (runoff / H&H) and sanitary wastewater systems</strong>, ensuring buildable blueprints and full compliance before PRASA (AAA), DRNA, OGPe, and EPA.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contacto Directo -->
-  <section id="contacto" class="py-20 px-4 max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-black navy-text" data-lang="es">¿Listo para diseñar, cotizar o construir su próximo proyecto?</h2>
-    <h2 class="text-3xl font-black navy-text" data-lang="en">Ready to design, quote, or build your next project?</h2>
-    
-    <p class="text-slate-600 mt-3 mb-8 max-w-xl mx-auto" data-lang="es">
-      Comuníquese directamente con nuestra oficina técnica para diseño y construcción de sistemas pluviales o de aguas negras, estudios de plomo y asbesto, o licitaciones de construcción general.
-    </p>
-    <p class="text-slate-600 mt-3 mb-8 max-w-xl mx-auto" data-lang="en">
-      Contact our technical office directly for stormwater or sanitary design-build projects, lead and asbestos studies, or general construction bidding.
-    </p>
-
-    <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200 inline-block w-full max-w-lg space-y-5">
-      <div>
-        <p class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="es">Teléfono Directo</p>
-        <p class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="en">Direct Phone</p>
-        <a href="tel:+19784905394" class="text-2xl font-black navy-text hover:underline block">
-          978.490.5394
+      <div class="w-full md:w-auto flex flex-col gap-3 min-w-[260px]">
+        <button onclick="openContactModal()" class="w-full gold-bg text-slate-950 font-black py-4 px-6 rounded-xl shadow-md hover:opacity-90 transition text-center cursor-pointer">
+          <span data-lang="es">📋 Abrir Página de Contacto</span>
+          <span data-lang="en">📋 Open Contact Page</span>
+        </button>
+        <a href="tel:+19784905394" class="w-full navy-card text-white font-bold py-3.5 px-6 rounded-xl text-center hover:opacity-95 transition">
+          📞 978.490.5394
         </a>
-      </div>
-      <div class="border-t border-slate-100 pt-4">
-        <p class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="es">Correo Electrónico Oficial</p>
-        <p class="text-xs font-bold uppercase tracking-widest gold-text mb-1" data-lang="en">Official Email</p>
-        <a href="mailto:alberto@asdbuildingsolutions.com" class="text-lg md:text-xl font-extrabold navy-text hover:underline break-all block mb-6">
-          alberto@asdbuildingsolutions.com
-        </a>
-        <div class="flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="tel:+19784905394" class="gold-bg text-slate-950 font-extrabold px-6 py-3.5 rounded-lg inline-block hover:opacity-90 transition">
-            <span data-lang="es">📞 Llamar Ahora</span>
-            <span data-lang="en">📞 Call Now</span>
-          </a>
-          <a href="mailto:alberto@asdbuildingsolutions.com?subject=Consulta%20Design-Build%20/%20Cotizaci%C3%B3n%20-%20ASD%20Building%20Solutions" class="navy-card text-white font-extrabold px-6 py-3.5 rounded-lg inline-block hover:opacity-95 transition">
-            <span data-lang="es">✉️ Enviar Correo</span>
-            <span data-lang="en">✉️ Send Email</span>
-          </a>
-        </div>
       </div>
     </div>
   </section>
@@ -685,16 +381,80 @@
   <!-- Pie de Página -->
   <footer class="navy-bg text-slate-400 text-xs py-8 px-4 text-center border-t border-slate-800">
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-      <p>
-        © 2026 <strong>ASD Building Solutions LLC</strong>.
-        <span data-lang="es">Todos los derechos reservados.</span>
-        <span data-lang="en">All rights reserved.</span>
-      </p>
-      <p>Tel: 978.490.5394 • alberto@asdbuildingsolutions.com • Reg. #510231</p>
+      <p>© 2026 <strong>ASD Building Solutions LLC</strong> • Reg. #510231</p>
+      <p>978.490.5394 • alberto@asdbuildingsolutions.com</p>
     </div>
   </footer>
 
-  <!-- Script de Cambio de Idioma (ES / EN) -->
+  <!-- PÁGINA / VENTANA DEDICADA DE CONTACTO RÁPIDO -->
+  <div id="contact-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 md:p-8 shadow-2xl border-t-8 gold-border relative my-8">
+      
+      <!-- Botón Cerrar (X) -->
+      <button onclick="closeContactModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center font-black text-slate-700 cursor-pointer">
+        ✕
+      </button>
+
+      <div class="mb-5">
+        <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="es">Atención Directa • ASD Building Solutions LLC</span>
+        <span class="text-xs font-extrabold uppercase tracking-widest gold-text" data-lang="en">Direct Response • ASD Building Solutions LLC</span>
+        <h3 class="text-2xl font-black navy-text mt-1" data-lang="es">Contacto Rápido y Cotizaciones</h3>
+        <h3 class="text-2xl font-black navy-text mt-1" data-lang="en">Quick Contact & Project Quotes</h3>
+      </div>
+
+      <!-- Botones de Acción Inmediata (Llamada y WhatsApp) -->
+      <div class="grid grid-cols-2 gap-3 mb-6">
+        <a href="tel:+19784905394" class="navy-card text-white font-extrabold py-3 px-4 rounded-xl text-center text-xs sm:text-sm flex items-center justify-center gap-2 shadow hover:opacity-95">
+          <span>📞</span>
+          <span data-lang="es">Llamar Ahora</span>
+          <span data-lang="en">Call Now</span>
+        </a>
+        <a href="https://wa.me/19784905394?text=Hola%20Alberto,%20me%20interesa%20cotizar%20un%20proyecto%20con%20ASD%20Building%20Solutions." target="_blank" rel="noopener" class="bg-emerald-600 text-white font-extrabold py-3 px-4 rounded-xl text-center text-xs sm:text-sm flex items-center justify-center gap-2 shadow hover:bg-emerald-700">
+          <span>💬</span>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Mini Formulario Rápido que prepara el correo directo a alberto@asdbuildingsolutions.com -->
+      <form onsubmit="sendQuickInquiry(event)" class="space-y-3.5 text-left text-sm">
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1" data-lang="es">Nombre o Empresa *</label>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1" data-lang="en">Name or Company *</label>
+          <input type="text" id="client-name" required class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 focus:outline-none focus:border-amber-600" placeholder="Ej. Ing. Pérez / Desarrolladora XYZ" />
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1" data-lang="es">Teléfono de Contacto *</label>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1" data-lang="en">Phone Number *</label>
+          <input type="tel" id="client-phone" required class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 focus:outline-none focus:border-amber-600" placeholder="787-000-0000" />
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1" data-lang="es">Servicio Requerido *</label>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1" data-lang="en">Required Service *</label>
+          <select id="client-service" class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 bg-white focus:outline-none focus:border-amber-600 font-semibold navy-text">
+            <option value="Diseño y Construcción Pluvial / Aguas Negras (Design-Build)">1. Diseño y Construcción Pluvial / Aguas Negras (Design-Build)</option>
+            <option value="Estudio de Plomo y Asbesto (Ambiental)">2. Estudio de Plomo y Asbesto (Lead & Asbestos)</option>
+            <option value="Construcción General / Remodelación">3. Construcción General / Remodelación</option>
+            <option value="Estimado de Costos / Licitación">4. Estimado de Costos / Licitación</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1" data-lang="es">Detalles Breves del Proyecto</label>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1" data-lang="en">Brief Project Details</label>
+          <textarea id="client-notes" rows="3" class="w-full border border-slate-300 rounded-lg px-3.5 py-2 focus:outline-none focus:border-amber-600" placeholder="Municipio, alcance o fecha estimada..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full gold-bg text-slate-950 font-black py-3.5 rounded-xl shadow-md hover:opacity-90 transition cursor-pointer">
+          <span data-lang="es">✉️ Enviar Solicitud a alberto@asdbuildingsolutions.com</span>
+          <span data-lang="en">✉️ Send Request to alberto@asdbuildingsolutions.com</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts de Idioma, Menú 3 Rayitas y Página de Contacto -->
   <script>
     function toggleLanguage() {
       const isEnglish = document.body.classList.toggle('lang-en');
@@ -702,9 +462,42 @@
       localStorage.setItem('asd_lang', isEnglish ? 'en' : 'es');
     }
 
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const openIcon = document.getElementById('menu-icon-open');
+      const closeIcon = document.getElementById('menu-icon-close');
+      menu.classList.toggle('hidden');
+      openIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    }
+
+    function openContactModal() {
+      document.getElementById('contact-modal').classList.remove('hidden');
+    }
+
+    function closeContactModal() {
+      document.getElementById('contact-modal').classList.add('hidden');
+    }
+
+    function sendQuickInquiry(e) {
+      e.preventDefault();
+      const name = document.getElementById('client-name').value;
+      const phone = document.getElementById('client-phone').value;
+      const service = document.getElementById('client-service').value;
+      const notes = document.getElementById('client-notes').value;
+
+      const subject = encodeURIComponent('Solicitud: ' + service + ' - ' + name);
+      const body = encodeURIComponent(
+        'Cliente / Empresa: ' + name + '\n' +
+        'Teléfono: ' + phone + '\n' +
+        'Servicio: ' + service + '\n\n' +
+        'Detalles del Proyecto:\n' + notes
+      );
+      window.location.href = 'mailto:alberto@asdbuildingsolutions.com?subject=' + subject + '&body=' + body;
+    }
+
     (function() {
-      const savedLang = localStorage.getItem('asd_lang');
-      if (savedLang === 'en') {
+      if (localStorage.getItem('asd_lang') === 'en') {
         document.body.classList.add('lang-en');
         document.documentElement.lang = 'en';
       }
